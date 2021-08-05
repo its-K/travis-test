@@ -1,6 +1,17 @@
 
+jobs:
+  include:
+   - os: linux
+     arch: amd64
+   - os: linux
+     arch: arm64
+   - os: linux
+     arch: arm64-graviton2
+
 language: cpp
-compiler: gcc
+compiler: 
+  - gcc
+  - clang
 
 script:
   - g++ -o main main.cpp
