@@ -5,8 +5,7 @@ jobs:
      arch: amd64
    - os: linux
      arch: arm64
-   - os: linux
-     arch: arm64-graviton2
+   - os: osx
 
 language: cpp
 compiler: 
