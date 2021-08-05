@@ -1,0 +1,8 @@
+  language: cpp
+  install: make get-deps
+  compiler:
+    - clang
+    - gcc
+  script:
+    - g++ -0 main main.cpp
+    - ./main
